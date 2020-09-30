@@ -15,7 +15,7 @@ namespace Openpay.Utils
             if (!url.Contains("?"))
                 token = "?";
 
-            return string.Format("{0}{1}{2}={3}", url, token, argument, HttpUtility.UrlEncode(value));
+            return string.Format("{0}{1}{2}={3}", url, token, HttpUtility.UrlEncode(argument), HttpUtility.UrlEncode(value));
         }
     }
 }
